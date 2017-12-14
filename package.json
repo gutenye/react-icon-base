@@ -1,12 +1,12 @@
 {
-  "name": "react-icon-base",
-  "version": "2.0.3",
+  "name": "@gutenye/react-icon-base",
+  "version": "2.0.7",
   "description": "base element for react-icons",
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
     "build": "babel index.js --out-dir lib",
-    "prepublish": "npm test && npm run build",
+    "prepublish": "npm run build",
     "test": "npm run lint && mocha test --compilers js:babel-register"
   },
   "repository": {
@@ -56,7 +56,6 @@
   },
   "config": {
     "ghooks": {
-      "commit-msg": "validate-commit-msg"
     },
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

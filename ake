@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+publish() {
+  npm publish
+  cnpm sync @gutenye/react-icon-base
+  git commit -a -m 'publish'
+  git push
+}
+
+
+case "$1" in
+  publish ) publish ;;
+esac
